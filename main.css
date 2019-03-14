@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
-
+body { font-family:'Merryweather',sans-serif; }
 
 /*** Main background image ***/
+
 
 #landing-view {
     background-image: url(../pics/pic2.jpg);
@@ -20,8 +21,99 @@ body{
 
 /* navigation*/
 
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+  }
+
+   
+  body {
+    font-family: "merryweather", sans-serif;
+  }
+   
+  .container nav.desk,
+  .container nav.mob{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background:transparent;
+    height: 60px;
+  }
+   
+  nav.desk ul {
+    list-style: none;
+    width: 70%;
+    height: 60px;
+    margin: 0 auto;
+  }
+   
+  nav.desk ul li {
+    width: 20%;
+    float: left;
+    text-align: center;
+    line-height: 60px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+   
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+      
+  .mob,
+  .hamburger-btn {
+    display: none;
+  }
+   
+  @media screen and (max-width: 700px) {
+    nav.desk {
+      display: none;
+    }
+   
+    nav.mob,
+    .hamburger-btn {
+      display: block;
+    }
+     
+    .hamburger-btn {
+      position: relative;
+    }
+   
+    .hamburger-btn .fa-bars,
+    .hamburger-btn .fa-times {
+      position: fixed;
+      right: 25px;
+      top: 15px;
+      font-size: 35px;
+      color: #fff;
+      cursor: pointer;
+    }
+   
+    .mob ul{
+      margin-top: 100px;
+    background: transparent;
+      display: none;
+    }
+   
+    .mob li {
+      text-align: center;
+      padding: 20px;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+     
+    .mob ul.active {
+      display: block;
+    }
+  }
+  
 
 /* footer social icons */
+
 ul.social-network {
 	list-style: none;
     display: inline;
@@ -95,9 +187,6 @@ a.socialIcon:hover, .socialHoverClass {
 	transition: all 0.8s;
 }
 
-a {
- background-color: #D3D3D3;   
-}
 
 
 /* contact form*/

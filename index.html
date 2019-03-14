@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
-    <!--Font Awesome-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--Bootstrap-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    
     <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
     <!--Custom CSS-->
     <link rel="stylesheet" href="main.css">
 
@@ -19,19 +24,70 @@
 </head>
 
 <body>
-    <div class=>
-        <nav class="text-center"> 
-                <ul>            
-                </ul>       
-            </nav>
+    
+    <header>
+        <div>
+                
         </div>
-    <header class="">
         <div class="jumbotron" id="landing-view">
-
         </div>
     </header> 
-    
 
+      </div>
+      <script>
+            $(document).ready(function(){
+              $(".hamburger-btn .fa-times").hide();
+        
+            $(".hamburger-btn .fa-bars").click(function(){
+              $(this).hide();
+              $(".hamburger-btn .fa-times").show();
+              $(".mob ul").addClass("active");
+            });
+        
+            $(".hamburger-btn .fa-times").click(function(){
+              $(this).hide();
+              $(".hamburger-btn .fa-bars").show();
+              $(".mob ul").removeClass("active");
+            });
+            });
+          </script>
+        </head>
+        
+      <div class="container">
+            <nav class="desk">
+              <ul>
+                <li class="active"><a href="#">home</a></li>
+                <li><a href="#">about us</a></li>
+                <li><a href="#"><img src="./pics/pic3.png" alt="Logo" height="30px"></a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="#">contact us</a></li>
+              </ul>
+            </nav>
+            
+            <nav class="mob">
+              <div class="hamburger-btn">
+                  <i class="fa fa-bars" aria-hidden="true"></i>
+                  <i class="fa fa-times" aria-hidden="true"></i>
+              </div>
+          
+              <ul>
+                  <li class="active"><a href="#"></a></li>
+                  <li><a href="#">about us</a></li>
+                  <li><a href="#">maps</a></li>
+                  <li><a href="#">blog</a></li>
+                  <li><a href="#">contact us</a></li>
+              </ul>
+            </nav>
+          
+            <div class="header">
+            </div>
+          
+          </div> 
+    
+    </div>
+            </div>
+</header>
+    
     <hr>
 
     <main>
@@ -87,7 +143,7 @@
                                 <input type="text" name="career[message]" class="form-control" tabindex="4" placeholder="Write your details" required>
                             </div>
 
-                            <button type="submit" name="submit" class="btn btn-primary btn-block" tabindex="5">Submit</button>
+                            <button type="submit" name="submit" class="btn btn-dark-alert btn-block" tabindex="5">Submit</button>
                         </form>
                     </div>
                 </div>
