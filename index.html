@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--Bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!--Custom CSS-->
     <link rel="stylesheet" href="main.css">
 
@@ -17,13 +19,18 @@
 </head>
 
 <body>
-    <header>
+    <div class=>
+        <nav class="text-center"> 
+                <ul>            
+                </ul>       
+            </nav>
+        </div>
+    <header class="">
         <div class="jumbotron" id="landing-view">
-            <a href="index.html" class="col-6">
-            </a>
 
         </div>
-    </header>
+    </header> 
+    
 
     <hr>
 
@@ -31,7 +38,7 @@
 
         <div class="container">
 
-            <h1 class="text-center"> About me </h1>
+            <h1 class="text-center"> About </h1>
             <h2>G-Eazy is a rapper and producer from Oakland, California.
                 His third studio album, The Beautiful & Damned is now available worldwide.
 
@@ -42,116 +49,63 @@
             <div class="clearfix"></div>
             <blockquote class="blockquote"></blockquote>
             <p> A halfway decent haircut will go a long way!</p>
-            <footer> Quote by <cite title="G-eazy">G-eazy</cite> </footer> 
+             Quote by <cite title="G-eazy">G-eazy</cite> 
         </div>
 
     </main>
     <br>
-    <hr>
     <br>
-    <footer>
-        <!--Section: Contact -->
-        <section class="mb-4">
+    <hr>
 
-            <!--Section heading-->
-            <h2 class="h1-responsive font-weight-bold text-center my-4">Colaborations</h2>
-            <!--Section description-->
-            <p class="text-center w-responsive mx-auto mb-5">Do you have any ideas ? Send a short description and we can
-                get in touch.
-                Peace.
-            </p>
-
-            <div class="row">
-
-                <!--Grid column-->
-                <div class="col-md-9 mb-md-0 mb-5">
-                    <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-
-                        <!--Grid row-->
-                        <div class="row">
-
-                            <!--Grid column-->
-                            <div class="col-md-6">
-                                <div class="md-form mb-0">
-                                    <input type="text" id="name" name="name" class="form-control">
-                                    <label for="name" class="">Your name</label>
-                                </div>
+    <!--Section: Contact -->
+    <section class="container-fluid">
+            <div class="center-form">
+                    <h1 class="h1-responsive font-weight-bold text-center my-4">Colaborations</h1>
+                    <p class="text-center w-responsive mx-auto mb-5">Do you have any ideas ? Send a short description and we can
+                            get in touch.
+                            Peace.
+                        </p>
+                    <div class="col-lg-12">
+                        <form action="" method="POST" enctype="multipart/form-data" id="form_id">
+                            <div class="form-group">
+                
+                                <input type="text" name="career[name]" class="form-control" tabindex="1" placeholder="Enter your name" pattern="[a-zA-Z. ]{1,50}" required>
                             </div>
-                            <!--Grid column-->
 
-                            <!--Grid column-->
-                            <div class="col-md-6">
-                                <div class="md-form mb-0">
-                                    <input type="text" id="email" name="email" class="form-control">
-                                    <label for="email" class="">Your email</label>
-                                </div>
+                            <div class="form-group">
+                
+                                <input type="email" name="career[email]" class="form-control" tabindex="2" placeholder="Enter your email address" required>
                             </div>
-                            <!--Grid column-->
 
-                        </div>
-                        <!--Grid row-->
-
-                        <!--Grid row-->
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="md-form mb-0">
-                                    <input type="text" id="subject" name="subject" class="form-control">
-                                    <label for="subject" class="">Subject</label>
-                                </div>
+                            <div class="form-group">
+                
+                                <input type="tel" name="career[mobile]" class="form-control" tabindex="3" placeholder="Enter your mobile number" pattern="[0-9]{10}" maxlength="10" required>
                             </div>
-                        </div>
-                        <!--Grid row-->
 
-                        <!--Grid row-->
-                        <div class="row">
-
-                            <!--Grid column-->
-                            <div class="col-md-12">
-
-                                <div class="md-form">
-                                    <textarea type="text" id="message" name="message" rows="2"
-                                        class="form-control md-textarea"></textarea>
-                                    <label for="message">Your message</label>
-                                </div>
-
+                            <div class="form-group">
+                
+                                <input type="text" name="career[message]" class="form-control" tabindex="4" placeholder="Write your details" required>
                             </div>
-                        </div>
-                        <!--Grid row-->
 
-                    </form>
-
-                    <div class="text-center text-md-right">
-                        <a class="btn btn-secondary "
-                            onclick="document.getElementById('contact-form').submit();">Send</a>
+                            <button type="submit" name="submit" class="btn btn-primary btn-block" tabindex="5">Submit</button>
+                        </form>
                     </div>
-                    <div class="status"></div>
                 </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-md-3 text-center">
-                    <ul class="list-unstyled mb-0">
-                        <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                            <p>Oakland, California USA</p>
-                        </li>
-
-                        <li><i class="fas fa-phone mt-4 fa-2x"></i>
-                            <p>+09 222 888 99</p>
-                        </li>
-
-                        <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                            <p>g-eazy@email.com</p>
-                        </li>
-                    </ul>
-                </div>
-                <!--Grid column-->
-
-            </div>
-
         </section>
-        <!--Section: Contact -->
-    </footer>
-
+        <!--Section: Social Media -->
+    <footer>
+        <div class="text-center">
+            <div class="col-md-12">
+                    <ul class="social-network social-circle">
+                        <li><a href="https://soundcloud.com/g_eazy" class="icoSoundcloud" title="Sondcloud"><i class="fa fa-soundcloud"></i></a></li>
+                        <li><a href="https://www.facebook.com/G.Eazy/" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/G_Eazy" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.google.com/search?q=g+eazy&oq=g+eazy+&aqs=chrome..69i57j69i60l3j0l2.6063j1j4&sourceid=chrome&ie=UTF-8" class="icoGoogle" title="Google +"><i class="fa fa-google"></i></a></li>
+                        <li><a href="https://open.spotify.com/artist/02kJSzxNuaWGqwubyUba0Z" class="icoSpotify" title="Sondcloud"><i class="fa fa-Spotify"></i></a></li>
+                    </ul>				
+                </div>
+            </div>
+    </footer>       
 </body>
 
 </html>
