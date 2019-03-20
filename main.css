@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 body { font-family:'Merryweather',sans-serif; }
 
-/*** Main background image ***/
+/*                     Main background image */
 
+html {
+    scroll-behavior: smooth;
+  }
 
+  
 #landing-view {
-    background-image: url(../pics/pic2.jpg);
+    background-image: url(./pics/pic2.jpg);
     background-attachment: fixed;
     background-position: bottom;
     background-size: cover;
@@ -14,12 +18,60 @@ body { font-family:'Merryweather',sans-serif; }
     margin-bottom: 0px;
     
 }
-/*** background colour ***/
-body{
-    background-color: rgba(121, 121, 121, 0.246);
+
+#musicbg{ 
+  background-color: white;  
 }
 
-/* navigation*/
+
+.parallax {
+    background-image: url(./pics/pic3.jpg);
+    height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #merchbg{
+    background-image: url(./pics/pic5.jpg);
+    background-attachment: fixed;
+    background-position: bottom;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    margin-bottom: 0px;
+    
+  }
+  
+  
+  .parallax {
+      background-image: url(./pics/pic3.jpg);
+      height: 500px; 
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+  
+
+/*                      Background color */
+body{
+    background-color: rgb(24, 23, 23);
+    opacity: 0.78;
+    filter: alpha(opacity=90); 
+}
+.hr{
+    background-color: #fafafa;
+}
+#demo {
+    color:white;
+    text-align: center;
+    font-size: 60px;
+    margin-top: 100px;
+  }
+/*                               navigation*/
 
 * {
     margin: 0;
@@ -40,6 +92,8 @@ body{
     width: 100%;
     background:transparent;
     height: 60px;
+    position: fixed;
+    position: absolute;
   }
    
   nav.desk ul {
@@ -69,64 +123,108 @@ body{
     display: none;
   }
    
-  @media screen and (max-width: 700px) {
-    nav.desk {
-      display: none;
-    }
-   
-    nav.mob,
-    .hamburger-btn {
-      display: block;
-    }
-     
-    .hamburger-btn {
-      position: relative;
-    }
-   
-    .hamburger-btn .fa-bars,
-    .hamburger-btn .fa-times {
-      position: fixed;
-      right: 25px;
-      top: 15px;
-      font-size: 35px;
-      color: #fff;
-      cursor: pointer;
-    }
-   
-    .mob ul{
-      margin-top: 100px;
-    background: transparent;
-      display: none;
-    }
-   
-    .mob li {
-      text-align: center;
-      padding: 20px;
-      text-transform: uppercase;
-      cursor: pointer;
-    }
-     
-    .mob ul.active {
-      display: block;
-    }
-  }
-  
 
-/* footer social icons */
+/*                                table */
+
+.tabletour {
+    margin-top: 100px;
+    
+}
+
+.table {
+  margin-top: 100px;
+
+}
+
+/*                                contact form*/
+
+
+
+
+
+.form-control {
+  border:none !important ;
+  border-width: 0 0 1px 0 !important;
+  background-color: whitesmoke !important;
+  background-image: none !important;
+
+  border-radius: 0 !important;
+  box-shadow: 0 !important;
+  display: block !important;
+  font-size: 15px !important;
+  height: 45px !important;
+  line-height:  1!important;
+  padding: 5px 20px 20px 14px;
+  width: 100%;
+  box-shadow: none !important;
+}
+
+
+
+
+button[type="submit"] {
+    margin-top: 15px;
+    margin-bottom: 50px;
+    display: block;
+    border-radius: 0 !important;
+
+}
+
+/*                               video*/
+
+.sqs-row {
+  width: auto !important;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+
+.row-music{
+  padding-top: 30px;
+  padding-bottom: 100px;
+}
+
+/*                                youtube-video*/
+
+#youtube-video{
+  padding: 10px;
+}
+
+/*                                spotify*/
+
+#spotifyplaylist {
+  padding: 10px;
+
+}
+
+/*                                Merch */
+
+
+
+/*                                footer*/
+
+#footer {
+  background-color: #525252;
+  color: #fafafa;
+  clear: both;
+  position: relative;
+  height: 40px;
+}
+/*                                footer social icons */
 
 ul.social-network {
 	list-style: none;
-    display: inline;
-    margin-left:0 !important;
+  display: inline;
+  margin-left:0 !important;
 	padding: 5;
 }
 ul.social-network li {
 	display: inline;
-	margin:5px;
+	margin:10px;
 }
 
 
-/* footer social icons */
+/*                                footer social icons */
 .social-network a.icoSoundcloud:hover {
 	background-color: #F56505;
 }
@@ -135,9 +233,6 @@ ul.social-network li {
 }
 .social-network a.icoTwitter:hover {
 	background-color:#33ccff;
-}
-.social-network a.icoGoogle:hover {
-	background-color:#BD3518;
 }
 .social-network a.icoVimeo:hover {
 	background-color:#0590B8;
@@ -188,42 +283,50 @@ a.socialIcon:hover, .socialHoverClass {
 }
 
 
-
-/* contact form*/
-
-.contact-heading {
-    font-family: "Exo", sans-serif;
-    font-weight: 300;
-    margin-top: 25px;
-    margin-bottom: 20px;
+/*                                media queries */
+@media screen and (max-width: 600px) {
+  nav.desk {
+    display: none;
+  }
+ 
+  nav.mob,
+  .hamburger-btn {
+    display: block;
+    
+  }
+   
+  .hamburger-btn {
+    position: relative;
+    
+  }
+ 
+  .hamburger-btn .fa-bars,
+  .hamburger-btn .fa-times {
+    position: fixed;
+    right: 25px;
+    top: 15px;
+    font-size: 35px;
+    color: #fff;
+    cursor: pointer;
+  }
+ 
+  .mob ul{
+    margin-top: 10px;
+  background: transparent;
+    display: none;
+  }
+ 
+  .mob li {
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+   
+  .mob ul.active {
+    display: block;
+  }
 }
-
-
-.center-form {
-    padding-top: 10px;
-    margin: 0 auto;
-    max-width: 70%;
-}
-
-button[type="submit"] {
-    margin-top: 15px;
-    margin-bottom: 20px;
-    background-color: #353535;
-    color: #fafafa;
-}
-
-
-/* footer*/
-
-footer {
-    background-color: #525252;
-    color: #fafafa;
-    min-height: 40px;
-    margin: 0;
-}
-
-
-/* media queries */
 
 @media(min-width: 992px) {
     .section-column {
@@ -234,8 +337,24 @@ footer {
 
     .center-form {
         padding-top: 30px;
-        min-height: 240px;
+        min-height: 250px;
         margin: 0 auto;
-        max-width: 40%;
+        max-width: 50%;
     }
+    
+}
+
+@media(min-width:360px) {
+  .videosize {
+    padding: 1.5rem;
+    margin-right: 0;
+    margin-left: 0;
+    border-width: .2rem;
+  }
+@media(min-width:350) {
+    .row{ max-width: 900px;
+    
+    }
+  }
+    
 }
