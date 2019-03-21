@@ -7,7 +7,7 @@ html {
     scroll-behavior: smooth;
   }
 
-  
+
 #landing-view {
     background-image: url(./pics/pic2.jpg);
     background-attachment: fixed;
@@ -16,17 +16,17 @@ html {
     height: 100vh;
     width: 100vw;
     margin-bottom: 0px;
-    
+
 }
 
-#musicbg{ 
-  background-color: white;  
+#musicbg{
+  background-color: white;
 }
 
 
 .parallax {
     background-image: url(./pics/pic3.jpg);
-    height: 500px; 
+    height: 500px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -38,29 +38,29 @@ html {
     background-attachment: fixed;
     background-position: bottom;
     background-size: cover;
-    height: 100vh;
+    height: 110vh;
     width: 100vw;
-    margin-bottom: 0px;
-    
+    margin-bottom: 120px;
+
   }
-  
-  
+
+
   .parallax {
       background-image: url(./pics/pic3.jpg);
-      height: 500px; 
+      height: 500px;
       background-attachment: fixed;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
     }
 
-  
+
 
 /*                      Background color */
 body{
     background-color: rgb(24, 23, 23);
     opacity: 0.78;
-    filter: alpha(opacity=90); 
+    filter: alpha(opacity=90);
 }
 .hr{
     background-color: #fafafa;
@@ -79,11 +79,11 @@ body{
     user-select: none;
   }
 
-   
+
   body {
     font-family: "merryweather", sans-serif;
   }
-   
+
   .container nav.desk,
   .container nav.mob{
     position: fixed;
@@ -95,14 +95,14 @@ body{
     position: fixed;
     position: absolute;
   }
-   
+
   nav.desk ul {
     list-style: none;
     width: 70%;
     height: 60px;
     margin: 0 auto;
   }
-   
+
   nav.desk ul li {
     width: 20%;
     float: left;
@@ -112,23 +112,23 @@ body{
     cursor: pointer;
     transition: all 0.5s ease;
   }
-   
+
   nav ul li a {
     color: #fff;
     text-decoration: none;
   }
-      
+
   .mob,
   .hamburger-btn {
     display: none;
   }
-   
+
 
 /*                                table */
 
 .tabletour {
     margin-top: 100px;
-    
+
 }
 
 .table {
@@ -199,6 +199,53 @@ button[type="submit"] {
 
 /*                                Merch */
 
+.product-grid{
+    display: grid;
+    background-color: transparent;
+    height: 100px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid #fff;
+    margin-top: 50px;
+}
+.product-grid:before{
+    content: '';
+    height: 50%;
+    width: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    transition: all 0.3s ease 0s;
+}
+
+.product-grid .product-content{
+    padding: 18px;
+    position: relative;
+    z-index: 2;
+    background-color: white;
+}
+.product-grid .title{
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 0 10px 0;
+}
+.product-grid .title a{ color: #000; }
+.product-grid .title a:hover{ color: #fa8231; }
+.product-grid .price{
+    color: #fa8231;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+@media only screen and (max-width:990px and (min-width 768px))
+.product-grid {
+  width : 100px;
+}
+
+
+
 
 
 /*                                footer*/
@@ -208,7 +255,12 @@ button[type="submit"] {
   color: #fafafa;
   clear: both;
   position: relative;
-  height: 40px;
+  height: 20px;
+  margin:auto;
+
+}
+.col-md-12 {
+padding: 3px;
 }
 /*                                footer social icons */
 
@@ -288,18 +340,18 @@ a.socialIcon:hover, .socialHoverClass {
   nav.desk {
     display: none;
   }
- 
+
   nav.mob,
   .hamburger-btn {
     display: block;
-    
+
   }
-   
+
   .hamburger-btn {
     position: relative;
-    
+
   }
- 
+
   .hamburger-btn .fa-bars,
   .hamburger-btn .fa-times {
     position: fixed;
@@ -309,20 +361,20 @@ a.socialIcon:hover, .socialHoverClass {
     color: #fff;
     cursor: pointer;
   }
- 
+
   .mob ul{
     margin-top: 10px;
   background: transparent;
     display: none;
   }
- 
+
   .mob li {
     text-align: center;
     padding: 10px;
     text-transform: uppercase;
     cursor: pointer;
   }
-   
+
   .mob ul.active {
     display: block;
   }
@@ -341,7 +393,7 @@ a.socialIcon:hover, .socialHoverClass {
         margin: 0 auto;
         max-width: 50%;
     }
-    
+
 }
 
 @media(min-width:360px) {
@@ -353,8 +405,8 @@ a.socialIcon:hover, .socialHoverClass {
   }
 @media(min-width:350) {
     .row{ max-width: 900px;
-    
+
     }
   }
-    
+
 }
