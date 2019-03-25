@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
 
     <!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
 
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -26,64 +26,17 @@
 </head>
 
 <body>
-<header>
-    <div>
-        </div>
-            <div class="jumbotron" id="landing-view">
-                 </div>
-                    </header>
-                        </div>
-                            <script>
-                                $(document).ready(function(){
-                                $(".hamburger-btn .fa-times").hide();
+<header class="jumbotron" id="landing-view" >
 
-                                $(".hamburger-btn .fa-bars").click(function(){
-                                $(this).hide();
-                                $(".hamburger-btn .fa-times").show();
-                                $(".mob ul").addClass("active");
-                                });
-
-                                $(".hamburger-btn .fa-times").click(function(){
-                                $(this).hide();
-                                $(".hamburger-btn .fa-bars").show();
-                                $(".mob ul").removeClass("active");
-                                });
-                                });
-                            </script>
-                        </head>
-            <div class="container">
-                            <nav class="desk">
-                            <ul>
-                                <li style="color:white;"class="active" href="#" >HOME</li>
-                                <li style="color:white;"href="#">TOUR</li>
-                                <h1><li><a href="#"><img src="./assets/pics/pic3.png" alt="Logo" height="20px"></a></li></h1>
-                                <li style="color:white;"href="#">MUSIC</li>
-                                <li style="color:white;"href="#">MERCH</li>
-                            </ul>
-                            </nav>
-
-                            <nav class="mob">
-                            <div class="hamburger-btn">
-                                <i class="fa fa-bars" aria-hidden="true"></i>
-                                <i class="fa fa-times" aria-hidden="true"></i>
-                            </div>
-
-                            <ul>
-                                <li style="color:white;" class="active"><a href="#"></a></li>
-                                <li style="color:white;" href="#">HOME</li>
-                                <li style="color:white;" href="#">TOUR</li>
-                                <li style="color:white;" href="#">MUSIC</li>
-                                <li style="color:white;" href="#">MERCH</li>
-                            </ul>
-                            </nav>
-
-                            <div class="header">
-                            </div>
-
-         </div>
-    </div>
-</div>
 </header>
+
+<script>
+$("#links a").click(function(e){
+  e.preventDefault();
+  $('html,body').animate({scrollTop:$(this.hash).offset().top}, "slow");
+});
+</script>
+
 &nbsp;
 
     <hr>
@@ -91,10 +44,10 @@
     <main style="color:white;">
 
         <div class="container">
-            <h1 class="text-center" > About </h1>
+            <h1 class="text-center" id="about" class="main"> About </h1>
               <div class="container">
 
-              <p class="text-sm-left font-weight-bold ">
+              <p class="text-sm-left font-weight-bold " >
                 Gerald Earl Gillum (born May 24, 1989), known professionally as G-Eazy, is an American rapper and philanthropist from Oakland, California.
                  His first major-label album, These Things Happen, was released on June 23, 2014 and peaked at number 3 on the US Billboard 200.
                  His second studio album, When It's Dark Out, was released on December 4, 2015. It featured the single "Me, Myself & I", which reached the top 10 of the US Billboard Hot 100.
@@ -112,8 +65,8 @@
 
 <!--Bootstrap Table-->
 &nbsp;
+<h1 class="text-center" id="tour" style="color:white;" >Tour</h1>
                 <div class="container" id="table" style="color:white;" >
-                    <h1 class="text-center" id="tour">Tour</h1>
                     <hr>
                     <table class="table" style="color:white;">
                             <thead class="thead-light">
@@ -187,13 +140,13 @@
                     </table>
                 </div>
             </header>
-
-            <br>
-            <br>
-            <br>
 <!--Time Countdown-->
+
         <head>
-            <h1 class="text-center" style="color:white;">Next Concert !!!</h1>
+            <h1 class="text-center" style="color:white;">NEXT CONCERT !!!
+              buy last tickets   <button type="button" class="btn btn-danger"> HERE ! </button>
+            </h1>
+
                 <p id="demo"></p>
                 <script>
                         var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
@@ -433,6 +386,36 @@
 
 
 
+<!-- navigation -->
+
+    <div class="container">
+
+    <nav class="desk">
+    <ul>
+        <li style="color:white;"href="about">ABOUT</li>
+        <li style="color:white;"href="#tour">TOUR</li>
+        <h1><li><a href="#"><img src="./assets/pics/pic3.png" alt="Logo" height="20px"></a></li></h1>
+        <li style="color:white;"href="#musicbg">MUSIC</li>
+        <li style="color:white;"href="#merchbg">MERCH</li>
+    </ul>
+    </nav>
+
+    <nav class="mob">
+    <div class="hamburger-btn">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+        <i class="fa fa-times" aria-hidden="true"></i>
+    </div>
+
+    <ul>
+        <li style="color:white;" class="active"><a href="#"></a></li>
+        <li style="color:white;" href="about">ABOUT</li>
+        <li style="color:white;" href="#tour">TOUR</li>
+        <li style="color:white;" href="#musicbg">MUSIC</li>
+        <li style="color:white;" href="#merchbg">MERCH</li>
+    </ul>
+    </nav>
+    </div>
+
         <!--Section: Social Media -->
     <footer>
         <div class="text-center">
@@ -449,3 +432,38 @@
 
 </body>
 </html>
+
+
+<script>
+
+$(document).ready(function() {
+
+var scrollLink = $('.scroll');
+
+// Smooth scrolling
+scrollLink.click(function(e) {
+e.preventDefault();
+$('body,html').animate({
+  scrollTop: $(this.hash).offset().top
+}, 1000 );
+});
+
+    $(document).ready(function(){
+    $(".hamburger-btn .fa-times").hide();
+
+    $(".hamburger-btn .fa-bars").click(function(){
+    $(this).hide();
+
+    $(".hamburger-btn .fa-times").show();
+    $(".mob ul").addClass("active");
+    });
+
+    $(".hamburger-btn .fa-times").click(function(){
+    $(this).hide();
+    $(".hamburger-btn .fa-bars").show();
+    $(".mob ul").removeClass("active");
+    });
+    });
+
+
+</script>

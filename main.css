@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 body { font-family:'Merryweather',sans-serif; }
 
-/*                     Main background image */
+/*                                                                 Main background image */
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
   }
 
 
@@ -63,7 +63,7 @@ html {
 
 
 
-/*                      Background color */
+/*                                                                 Background color */
 body{
     background-color: rgb(24, 23, 23);
     opacity: 0.78;
@@ -77,13 +77,20 @@ body{
     text-align: center;
     font-size: 60px;
     margin-top: 100px;
+
+    /* About page */
+    .text-sm-left {
+      background-color: #232324;
+      padding: 40px;
+      font-size: 20px;
+
+    }
   }
-/*                               navigation*/
+/*                                                                 navigation*/
 
 * {
     margin: 0;
     padding: 0;
-    user-select: none;
   }
 
 
@@ -93,64 +100,18 @@ body{
 
 
 
-  /* About page */
-  .text-sm-left {
-    background-color: #232324;
-    padding: 40px;
-    font-size: 20px;
-
-  }
-
-  .container nav.desk,
-  .container nav.mob{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background:transparent;
-    height: 60px;
-    position: fixed;
-    position: absolute;
-  }
-
-  nav.desk ul {
-    list-style: none;
-    width: 70%;
-    height: 60px;
-    margin: 0 auto;
-  }
-
-  nav.desk ul li {
-    width: 20%;
-    float: left;
-    text-align: center;
-    line-height: 60px;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: all 0.5s ease;
-  }
-
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-
-  .mob,
-  .hamburger-btn {
-    display: none;
-  }
 
 
-/*                                table */
+
+/*                                                                 table */
 
 .tabletour {
-    margin-top: 100px;
+    margin-top: 50px;
 
 }
 
 .table {
-  margin-top: 100px;
-
+  background-color: #232324;
 }
 
 #tourticket a:link, a:visited {
@@ -165,7 +126,7 @@ a:hover, a:active {
 }
 
 
-/*                                contact form*/
+/*                                                                 contact form*/
 
 .form-control {
   border:none !important ;
@@ -196,7 +157,7 @@ button[type="submit"] {
 }
 
 
-/* music page */
+/*                                                                 music page */
 
 .container-audio {
     width: 66%;
@@ -223,7 +184,7 @@ audio:nth-child(2), audio:nth-child(4), audio:nth-child(6) {
     position: relative;
 }
 
-/*                               video*/
+/*                                                                 video*/
 .musictext {
   text-align: center;
   font-size: 70px;
@@ -245,20 +206,20 @@ audio:nth-child(2), audio:nth-child(4), audio:nth-child(6) {
   padding-bottom: 100px;
 }
 
-/*                                youtube-video*/
+/*                                                                 youtube-video*/
 
 #youtube-video{
   padding: 10px;
 }
 
-/*                                spotify*/
+/*                                                                 spotify*/
 
 #spotifyplaylist {
   padding: 10px;
 
 }
 
-/*                                Merch */
+/*                                                                 Merch */
 
 .product-grid{
     font-family: 'Merryweather', sans-serif;
@@ -283,7 +244,6 @@ audio:nth-child(2), audio:nth-child(4), audio:nth-child(6) {
 .product-grid .product-content{
     padding: 18px;
     position: relative;
-    z-index: 2;
     background-color: white;
 }
 .product-grid .title{
@@ -309,7 +269,7 @@ audio:nth-child(2), audio:nth-child(4), audio:nth-child(6) {
     .product-grid{ margin-bottom: 30px; }
 }
 
-/*                                footer*/
+/*                                                                 footer*/
 
 #footer {
   background-color: #525252;
@@ -323,7 +283,7 @@ audio:nth-child(2), audio:nth-child(4), audio:nth-child(6) {
 .col-md-12 {
 padding: 3px;
 }
-/*                                footer social icons */
+/*                                                                 footer social icons */
 
 ul.social-network {
 	list-style: none;
@@ -337,7 +297,7 @@ ul.social-network li {
 }
 
 
-/*                                footer social icons */
+/*                                                                  footer social icons */
 .social-network a.icoSoundcloud:hover {
 	background-color: #F56505;
 }
@@ -396,6 +356,61 @@ a.socialIcon:hover, .socialHoverClass {
 }
 
 
+/*                                                                 hamburger menu*/
+
+
+
+.container nav.desk,
+.container nav.mob{
+position: fixed;
+top: 0;
+left: 0;
+width: 101%;
+bottom: 0px;
+height: 60px;
+box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14);
+}
+
+nav.desk ul {
+list-style: none;
+width: 70%;
+height: 60px;
+margin: 0 auto;
+}
+
+nav.desk ul li {
+width: 20%;
+float: left;
+text-align: center;
+line-height: 60px;
+text-transform: uppercase;
+cursor: pointer;
+transition: all 0.5s sea;
+}
+
+
+nav.desk ul li.active,
+nav.mob ul li.active{
+background: black;
+height: 100%;
+bottom: 0px;
+padding: 30;
+display: table-cell;
+vertical-align: middle;
+}
+
+nav ul li a {
+color: #fff;
+text-decoration: none;
+}
+
+
+  .mob,
+  .hamburger-btn {
+    display: none;
+  }
+
+
 /*                                media queries */
 @media screen and (max-width: 600px) {
   nav.desk {
@@ -424,20 +439,25 @@ a.socialIcon:hover, .socialHoverClass {
   }
 
   .mob ul{
-    margin-top: 10px;
-  background: transparent;
+    margin-top: 0px;
+    background: black;
     display: none;
   }
 
   .mob li {
     text-align: center;
-    padding: 10px;
+    padding: 50px;
     text-transform: uppercase;
     cursor: pointer;
+    font-size: 20px;
   }
 
   .mob ul.active {
     display: block;
+    background-color: black;
+    height: 900px;
+
+
   }
 }
 
