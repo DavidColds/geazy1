@@ -212,24 +212,23 @@ button[type="submit"] {
 /*                                Merch */
 
 .product-grid{
-    display: grid;
-    background-color: transparent;
-    height: 100px;
+    font-family: 'Merryweather', sans-serif;
     text-align: center;
     overflow: hidden;
     position: relative;
-    border: 2px solid #fff;
-    margin-top: 50px;
+    border: 4px solid #fff;
+    margin-top: 100px;
 }
-.product-grid:before{
-    content: '';
-    height: 50%;
-    width: 50%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 1;
-    transition: all 0.3s ease 0s;
+
+.product-grid:hover:before{ background-color: rgba(0,0,0,0.05); }
+.product-grid .product-image{
+    overflow: hidden;
+    position: relative;
+}
+.product-grid .product-image a{ display: block; }
+.product-grid .product-image img{
+    width: 100%;
+    height: auto;
 }
 
 .product-grid .product-content{
@@ -239,26 +238,27 @@ button[type="submit"] {
     background-color: white;
 }
 .product-grid .title{
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 500;
     margin: 0 0 10px 0;
 }
 .product-grid .title a{ color: #000; }
-.product-grid .title a:hover{ color: #fa8231; }
+.product-grid .title a:hover{ color: white; }
 .product-grid .price{
-    color: #fa8231;
+    color: black;
     font-size: 18px;
     font-weight: 600;
 }
-
-@media only screen and (max-width:990px and (min-width 768px))
-.product-grid {
-  width : 100px;
+.product-grid .price span{
+    color: #777;
+    margin: 0 0 0 5px;
+    font-weight: 300;
+    text-decoration: line-through;
+    display: inline-block;
 }
-
-
-
-
+@media only screen and (max-width:990px){
+    .product-grid{ margin-bottom: 30px; }
+}
 
 /*                                footer*/
 
