@@ -38,7 +38,7 @@ html {
     background-attachment: fixed;
     background-position: bottom;
     background-size: cover;
-    height: 110vh;
+    min-height: 90vh;
     width: 100vw;
     margin-bottom: 120px;
 
