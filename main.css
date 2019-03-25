@@ -9,7 +9,7 @@ html {
 
 
 #landing-view {
-    background-image: url(./pics/pic2.jpg);
+    background-image: url(./assets/pics/pic2.jpg);
     background-attachment: fixed;
     background-position: bottom;
     background-size: cover;
@@ -19,13 +19,20 @@ html {
 
 }
 
-#musicbg{
-  background-color: white;
+#musicbg {
+    background-image: url(./assets/pics/pic4.jpg);
+    background-attachment: fixed;
+    background-position: bottom;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100vw;
+    margin-bottom: 120px;
+
 }
 
 
 .parallax {
-    background-image: url(./pics/pic3.jpg);
+    background-image: url(./assets/pics/pic3.jpg);
     height: 500px;
     background-attachment: fixed;
     background-position: center;
@@ -34,7 +41,7 @@ html {
   }
 
   #merchbg{
-    background-image: url(./pics/pic5.jpg);
+    background-image: url(./assets/pics/pic5.jpg);
     background-attachment: fixed;
     background-position: bottom;
     background-size: cover;
@@ -46,7 +53,7 @@ html {
 
 
   .parallax {
-      background-image: url(./pics/pic3.jpg);
+      background-image: url(./assets/pics/pic3.jpg);
       height: 500px;
       background-attachment: fixed;
       background-position: center;
@@ -82,6 +89,15 @@ body{
 
   body {
     font-family: "merryweather", sans-serif;
+  }
+
+
+
+  /* About page */
+  .text-sm-left {
+    background-color: #232324;
+    padding: 40px;
+    font-size: 20px;
   }
 
   .container nav.desk,
@@ -150,10 +166,6 @@ a:hover, a:active {
 
 /*                                contact form*/
 
-
-
-
-
 .form-control {
   border:none !important ;
   border-width: 0 0 1px 0 !important;
@@ -182,17 +194,53 @@ button[type="submit"] {
 
 }
 
+
+/* music page */
+
+.container-audio {
+    width: 66%;
+    height: auto;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #eee;
+    color: #444;
+    margin: 20px auto;
+    overflow: hidden;
+}
+audio {
+  width:100%;
+}
+audio:nth-child(2), audio:nth-child(4), audio:nth-child(6) {
+    margin: 0;
+}
+.container-audio .colum1 {
+    width: 23px;
+    height: 5em;
+    border-radius: 5px;
+    margin: 0 10px 0 0;
+    display: inline-block;
+    position: relative;
+}
+
 /*                               video*/
+.musictext {
+  text-align: center;
+  font-size: 70px;
+  font-color: whitesmoke;
+  background-color: black;
+  margin-top: 50px;
+}
 
 .sqs-row {
   width: auto !important;
   margin-right: 0px;
   margin-left: 0px;
+  margin-top: 50px;
 }
 
 
 .row-music{
-  padding-top: 30px;
+  padding-top: 50px;
   padding-bottom: 100px;
 }
 
