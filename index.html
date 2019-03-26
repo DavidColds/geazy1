@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="en" >
 
 <head>
     <meta charset="UTF-8">
@@ -30,21 +30,13 @@
 
 </header>
 
-<script>
-$("#links a").click(function(e){
-  e.preventDefault();
-  $('html,body').animate({scrollTop:$(this.hash).offset().top}, "slow");
-});
-</script>
-
 &nbsp;
 
     <hr>
-
-    <main style="color:white;">
+    <main style="color:white;" id="about" >
 
         <div class="container">
-            <h1 class="text-center" id="about" class="main"> About </h1>
+            <h1 class="text-center"> About </h1>
               <div class="container">
 
               <p class="text-sm-left font-weight-bold " >
@@ -392,11 +384,11 @@ $("#links a").click(function(e){
 
     <nav class="desk">
     <ul>
-        <li style="color:white;"href="about">ABOUT</li>
-        <li style="color:white;"href="#tour">TOUR</li>
-        <h1><li><a href="#"><img src="./assets/pics/pic3.png" alt="Logo" height="20px"></a></li></h1>
-        <li style="color:white;"href="#musicbg">MUSIC</li>
-        <li style="color:white;"href="#merchbg">MERCH</li>
+        <li><a style="color:white;" class="main" href="#about">ABOUT</a></li>
+        <li><a style="color:white;" class="main" href="#tour">TOUR</a></li>
+        <h1> <li> <a href="#"> <img src="./assets/pics/pic3.png" alt="Logo" height="20px"></a></li></h1>
+        <li><a style="color:white;" class="main" href="#musicbg">MUSIC</a></li>
+        <li><a style="color:white;" class="main" href="#merchbg">MERCH</a></li>
     </ul>
     </nav>
 
@@ -408,10 +400,10 @@ $("#links a").click(function(e){
 
     <ul>
         <li style="color:white;" class="active"><a href="#"></a></li>
-        <li style="color:white;" href="about">ABOUT</li>
-        <li style="color:white;" href="#tour">TOUR</li>
-        <li style="color:white;" href="#musicbg">MUSIC</li>
-        <li style="color:white;" href="#merchbg">MERCH</li>
+        <li><a style="color:white;" class="main" href="#about">ABOUT</a></li>
+        <li><a style="color:white;" class="main" href="#tour">TOUR</a></li>
+        <li><a style="color:white;" class="main" href="#musicbg">MUSIC</a></li>
+        <li><a style="color:white;" class="main" href="#merchbg">MERCH</a></li>
     </ul>
     </nav>
     </div>
@@ -435,18 +427,6 @@ $("#links a").click(function(e){
 
 
 <script>
-
-$(document).ready(function() {
-
-var scrollLink = $('.scroll');
-
-// Smooth scrolling
-scrollLink.click(function(e) {
-e.preventDefault();
-$('body,html').animate({
-  scrollTop: $(this.hash).offset().top
-}, 1000 );
-});
 
     $(document).ready(function(){
     $(".hamburger-btn .fa-times").hide();
