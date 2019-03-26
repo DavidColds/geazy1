@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 body { font-family:'Merryweather',sans-serif; }
 
-/*                                                                 Main background image */
+/*                     Main background image */
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
   }
 
 
@@ -100,6 +100,52 @@ body{
 
 
 
+
+/*                                                                 hamburger menu*/
+
+.container nav.desk,
+.container nav.mob{
+position: fixed;
+top: 0;
+left: 0;
+width: 101%;
+height: 60px;
+box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14);
+}
+
+nav.desk ul {
+list-style: none;
+width: 70%;
+height: 60px;
+margin: 0 auto;
+}
+
+nav.desk ul li {
+width: 20%;
+float: left;
+text-align: center;
+line-height: 60px;
+text-transform: uppercase;
+cursor: pointer;
+transition: all 0.5s sea;
+}
+
+
+nav.desk ul li.active,
+nav.mob ul li.active{
+background: black;
+}
+
+nav ul li a {
+color: #fff;
+text-decoration: none;
+}
+
+
+  .mob,
+  .hamburger-btn {
+    display: none;
+  }
 
 
 
@@ -362,13 +408,27 @@ a.socialIcon:hover, .socialHoverClass {
 
 .container nav.desk,
 .container nav.mob{
-position: fixed;
 top: 0;
 left: 0;
 width: 101%;
 bottom: 0px;
 height: 60px;
 box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14);
+}
+nav {
+  position: fixed;
+  list-style: none;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  height: 4em;
+  width: 100%;
+  transition: background-color 0.4s ease-out;
+}
+
+
+nav.scroll {
+  background-color: black;
 }
 
 nav.desk ul {

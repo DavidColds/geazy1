@@ -379,7 +379,7 @@
 
 
 <!-- navigation -->
-
+<nav id="navbar" >
     <div class="container">
 
     <nav class="desk">
@@ -407,6 +407,7 @@
     </ul>
     </nav>
     </div>
+</nav>
 
         <!--Section: Social Media -->
     <footer>
@@ -427,6 +428,11 @@
 
 
 <script>
+
+    window.onscroll = () => {
+    const nav = document.querySelector('#navbar');
+    if(this.scrollY <= 10) nav.className = ''; else nav.className = 'scroll';
+    };
 
     $(document).ready(function(){
     $(".hamburger-btn .fa-times").hide();
