@@ -3,25 +3,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+
+    <!-- jQuery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
+    <!--Font Awesome-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Band</title>
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="main.css">
+
+    <script type="text/javascript" src="node_modules/default-passive-events/dist/index.js"></script>
+
+    <title>G-eazy</title>
 </head>
 <body>
-    <header>
+  <main id="musicbg">
+          <header>
+                  <br>
+                      <div class="sqs-block-content">
+                              <center class="musictext">
+                                 <p style="color:whitesmoke"> Music </p>
+                               </center>
+                      </div>
+          </header>
 
-    </header>
-    <section>
-      <div class="container-audio">
-          <audio controls  loop autoplay>
-                     <source src="./assets/audio/song1.mp3" type="audio/mpeg">
-                 </audio>
+
+  <section class="album Beautiful and Damned">
+
+                  <div class="row sqs-row">
+
+                          <div class="container">
+                              <div class="row justify-content-center">
+  <!--video-->
+                                  <div class="col-xs-6 col-sm-8 col-lg-6" id="youtube-video">
+                                      <div class="embed-responsive embed-responsive-16by9">
+                                              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6PUf1Rj4kpc" allowfullscreen></iframe>
+                                      </div>
+                                  </div>
+  <!--Sporify playlist-->
+
+                                  <div class="col-xs-6 col-sm-8 col-lg-6" id="spotifyplaylist">
+                                               <iframe src="https://open.spotify.com/embed/album/1VAc77UvK5wj8ZSWCo3V2b" style="border: 0; width: 100%; height: 310px;" allowfullscreen allow="autoplay; encrypted-media"></iframe>
+                                  </div>
+                              </div>
+                          </div>
+                  </div>
+
+  </section>
+
+  <div class="container-audio">
+      <audio controls  loop >
+                 <source src="./assets/audio/song1.mp3" type="audio/mpeg">
+             </audio>
+      </div>
+
+  <br>
+
+  <div class="sqs-block horizontalrule-block sqs-block-horizontalrule"><div class="sqs-block-content"><hr></div></div>
+
+  <br>
+
+  <section class="album When-it's-dark-outside">
+          <div class="row sqs-row">
+                  <div class="container">
+                      <div class="row justify-content-center">
+  <!--video-->
+                          <div class="col-xs-6 col-sm-8 col-lg-6" id="youtube-video">
+                              <div class="embed-responsive embed-responsive-16by9">
+                                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/-9r7ezjl1us" allowfullscreen></iframe>
+                              </div>
+                          </div>
+  <!--Sporify playlist-->
+
+                          <div class="col-xs-6 col-sm-8 col-lg-6" id="spotifyplaylist">
+                                       <iframe src="https://open.spotify.com/embed/album/09Q3WwGYsQe5ognkvVkmCu" style="border: 0; width: 100%; height: 310px;" allowfullscreen allow="autoplay; encrypted-media"></iframe>
+                          </div>
+                      </div>
+                  </div>
           </div>
-    </section>
 
-    <footer>
+          <div class="container-audio">
+              <audio controls  loop >
+                         <source src="./assets/audio/song2.mp3" type="audio/mpeg">
+                     </audio>
+              </div>
+  <br>
+          <div class="sqs-block horizontalrule-block sqs-block-horizontalrule"><div class="sqs-block-content"><hr></div></div>
 
-    </footer>
+  <br>
+  </section>
 
+  <br>
+
+  </main>
 </body>
 </html>

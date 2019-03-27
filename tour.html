@@ -6,9 +6,9 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
-    
+
     <!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
 
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -18,73 +18,120 @@
 
     <!--Custom CSS-->
     <link rel="stylesheet" href="main.css">
+
+    <script type="text/javascript" src="node_modules/default-passive-events/dist/index.js"></script>
+
+    <title>G-eazy</title>
 </head>
+<body>
+  <h1 class="text-center" id="tour" style="color:white;" >Tour</h1>
+                  <div class="container" id="table" style="color:white;" >
+                      <hr>
+                      <table class="table" style="color:white;">
+                              <thead class="thead-light">
+
+                              <tr>
+                                  <th>DATE</th>
+                                  <th>CITY</th>
+                                  <th>LOCATION</th>
+                                  <th style="color:black;" href="#"><a href="#"></a>TICKETS</th>
+                              </tr>
+                          </thead>
+
+                          <tbody id="tourticket">
+                              <tr>
+                              <td>text</td>
+                              <td>City</td>
+                              <td>Location </td>
+                              <td><a href="#">Buy ticket</a></td>
+                              </tr>
+
+                              <tr>
+                              <td>text</td>
+                              <td>City</td>
+                              <td>Location </td>
+                              <td><a href="#">Buy ticket</a></td>
+                              </tr>
+
+                              <tr>
+                              <td>text</td>
+                              <td>City</td>
+                              <td>Location </td>
+                              <td><a href="#">Buy ticket</a></td>
+                              </tr>
+
+                              <tr>
+                              <td>text</td>
+                              <td>City</td>
+                              <td>Location </td>
+                              <td><a href="#">Buy ticket</a></td>
+                              </tr>
+
+                              <tr>
+                              <td>text</td>
+                              <td>City</td>
+                              <td>Location </td>
+                              <td><a href="#">Buy ticket</a></td>
+                              </tr>
+
+                              <tr>
+                              <td>text</td>
+                              <td>City</td>
+                              <td>Location </td>
+                              <td><a href="#">Buy ticket</a></td>
+                              <tr>
+
+                              <td>text</td>
+                              <td>City</td>
+                              <td>Location </td>
+                              <td><a href="#">Buy ticket</a></td>
+                              </tr>
+                              </tr>
+
+                              <tr>
+                              <td>text</td>
+                              <td>City</td>
+                              <td>Location</td>
+                              <td><a href="#">Buy ticket</a></td>
+
+                           </tr>
+                          </tbody>
+                      </table>
+                  </div>
+              </header>
+  <!--Time Countdown-->
+
+          <head>
+              <h1 class="text-center" style="color:white;">NEXT CONCERT !!!
+                buy last tickets   <button type="button" class="btn btn-danger"> HERE ! </button>
+              </h1>
+
+                  <p id="demo"></p>
+                  <script>
+                          var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
+
+                          var x = setInterval(function() {
+
+                          var now = new Date().getTime();
+
+                          var distance = countDownDate - now;
 
 
-        <div class="container"style="color:white;">  
-            <h1>Tour</h1>  
-            <table class="table" style="color:white;">  
-                <thead>  
-                    <tr>  
-                        <th>Sr.No.</th>  
-                        <th>Emolpyee Name</th>  
-                        <th>Email</th>  
-                        <th>City</th>  
-                    </tr>  
-                </thead>  
-                <tbody>  
-                    <tr>  
-                        <td>1</td>  
-                        <td>Shaili Dashora</td>  
-                        <td>abc@mail.com </td>  
-                        <td>Chittorgarh</td>  
-                    </tr>  
-                    <tr>  
-                        <td>2</td>  
-                        <td>Sourabh Somani</td>  
-                        <td>xyz@mail.com </td>  
-                        <td>Banglore</td>  
-                    </tr> 
-                    <tr>  
-                            <td>2</td>  
-                            <td>Sourabh Somani</td>  
-                            <td>xyz@mail.com </td>  
-                            <td>Banglore</td>  
-                        </tr>
-                        <tr>  
-                                <td>2</td>  
-                                <td>Sourabh Somani</td>  
-                                <td>xyz@mail.com </td>  
-                                <td>Banglore</td>  
-                            </tr>
-                            <tr>  
-                                    <td>2</td>  
-                                    <td>Sourabh Somani</td>  
-                                    <td>xyz@mail.com </td>  
-                                    <td>Banglore</td>  
-                                </tr>
-                                <tr>  
-                                        <td>2</td>  
-                                        <td>Sourabh Somani</td>  
-                                        <td>xyz@mail.com </td>  
-                                        <td>Banglore</td>  <tr>  
-                                                
-            <td>2</td>  
-             <td>Sourabh Somani</td>  
-            <td>xyz@mail.com </td>  
-            <td>Banglore</td>  
-             </tr>
-             </tr> 
-                    <tr>  
-                        <td>3</td>  
-                        <td>Shobhna Singvi</td>  
-                        <td>pqr@mail.com</td>  
-                        <td>Mumbai</td>  
-                    </tr>  
-                </tbody>  
-            </table>  
-        </div>  
-        <script src="js/jquery-2.1.4.min.js"></script>  
-        <script src="js/bootstrap.min.js"></script>  
-    </body>  
+                          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                          document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+                          + minutes + "m " + seconds + "s ";
+
+                          if (distance < 0) {
+                              clearInterval(x);
+                              document.getElementById("demo").innerHTML = "EXPIRED";
+                          }
+                          }, 1000);
+                  </script>
+              </head>
+
+</body>
 </html>

@@ -416,6 +416,7 @@ bottom: 0px;
 height: 60px;
 box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14);
 }
+
 nav {
   position: fixed;
   list-style: none;
@@ -491,6 +492,7 @@ text-decoration: none;
 
   .hamburger-btn {
     position: relative;
+
 
   }
 
