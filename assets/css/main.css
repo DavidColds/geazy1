@@ -1,0 +1,545 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
+
+body {
+  font-family: 'Merryweather', sans-serif;
+}
+
+/*                     Main background image */
+html {
+  scroll-behavior: smooth;
+}
+
+#landing-view {
+  background-image: url(./assets/pics/pic2.jpg);
+  background-attachment: fixed;
+  background-position: bottom;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  margin-bottom: 0px;
+}
+
+#musicbg {
+  background-image: url(./assets/pics/pic4.jpg);
+  background-attachment: fixed;
+  background-position: bottom;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100vw;
+  margin-bottom: 120px;
+}
+
+.parallax {
+  background-image: url(./assets/pics/pic3.jpg);
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#merchbg {
+  background-image: url(./assets/pics/pic5.jpg);
+  background-attachment: fixed;
+  background-position: bottom;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100vw;
+  margin-bottom: 120px;
+}
+
+.parallax {
+  background-image: url(./assets/pics/pic3.jpg);
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*                                                                 Background color */
+body {
+  background-color: rgb(24, 23, 23);
+  opacity: 0.78;
+  filter: alpha(opacity=90);
+}
+
+.hr {
+  background-color: #fafafa;
+}
+
+#demo {
+  color: white;
+  text-align: center;
+  font-size: 60px;
+  margin-top: 100px;
+
+  /* About page */
+  .text-sm-left {
+    background-color: #232324;
+    padding: 40px;
+    font-size: 20px;
+  }
+}
+
+/*                                                                 navigation*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "merryweather", sans-serif;
+}
+
+/*                                                                 hamburger menu*/
+.container nav.desk,
+.container nav.mob {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 101%;
+  height: 60px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14);
+}
+
+nav.desk ul {
+  list-style: none;
+  width: 70%;
+  height: 60px;
+  margin: 0 auto;
+}
+
+nav.desk ul li {
+  width: 20%;
+  float: left;
+  text-align: center;
+  line-height: 60px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.5s sea;
+}
+
+nav.desk ul li.active,
+nav.mob ul li.active {
+  background: black;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.mob,
+.hamburger-btn {
+  display: none;
+}
+
+/*                                                                 table */
+.tabletour {
+  margin-top: 50px;
+}
+
+.table {
+  background-color: #232324;
+}
+
+#tourticket a:link, a:visited {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: black;
+}
+
+/*                                                                 contact form*/
+.form-control {
+  border: none !important;
+  border-width: 0 0 1px 0 !important;
+  background-color: whitesmoke !important;
+  background-image: none !important;
+  border-radius: 0 !important;
+  box-shadow: 0 !important;
+  display: block !important;
+  font-size: 15px !important;
+  height: 45px !important;
+  line-height: 1 !important;
+  padding: 5px 20px 20px 14px;
+  width: 100%;
+  box-shadow: none !important;
+}
+
+button[type="submit"] {
+  margin-top: 15px;
+  margin-bottom: 50px;
+  display: block;
+  border-radius: 0 !important;
+}
+
+/*                                                                 music page */
+.container-audio {
+  width: 66%;
+  height: auto;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #eee;
+  color: #444;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+audio {
+  width: 100%;
+}
+
+audio:nth-child(2), audio:nth-child(4), audio:nth-child(6) {
+  margin: 0;
+}
+
+.container-audio .colum1 {
+  width: 23px;
+  height: 5em;
+  border-radius: 5px;
+  margin: 0 10px 0 0;
+  display: inline-block;
+  position: relative;
+}
+
+/*                                                                 video*/
+.musictext {
+  text-align: center;
+  font-size: 70px;
+  font-color: whitesmoke;
+  background-color: rgb(24, 23, 23);
+  margin-top: 50px;
+  font-weight: 500;
+}
+
+.sqs-row {
+  width: auto !important;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-top: 50px;
+}
+
+.row-music {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+/*                                                                 youtube-video*/
+#youtube-video {
+  padding: 10px;
+}
+
+/*                                                                 spotify*/
+#spotifyplaylist {
+  padding: 10px;
+}
+
+/*                                                                 Merch */
+.product-grid {
+  font-family: 'Merryweather', sans-serif;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  border: 4px solid #fff;
+  margin-top: 100px;
+}
+
+.product-grid:hover:before {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.product-grid .product-image {
+  overflow: hidden;
+  position: relative;
+}
+
+.product-grid .product-image a {
+  display: block;
+}
+
+.product-grid .product-image img {
+  width: 100%;
+  height: auto;
+}
+
+.product-grid .product-content {
+  padding: 18px;
+  position: relative;
+  background-color: white;
+}
+
+.product-grid .title {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0 0 10px 0;
+}
+
+.product-grid .title a {
+  color: #000;
+}
+
+.product-grid .title a:hover {
+  color: white;
+}
+
+.product-grid .price {
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.product-grid .price span {
+  color: #777;
+  margin: 0 0 0 5px;
+  font-weight: 300;
+  text-decoration: line-through;
+  display: inline-block;
+}
+
+@media only screen and (max-width:990px) {
+  .product-grid {
+    margin-bottom: 30px;
+  }
+}
+
+/*                                                                 footer*/
+#footer {
+  background-color: #525252;
+  color: #fafafa;
+  clear: both;
+  position: relative;
+  height: 20px;
+  margin: auto;
+}
+
+.col-md-12 {
+  padding: 3px;
+}
+
+/*                                                                 footer social icons */
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 5;
+}
+
+ul.social-network li {
+  display: inline;
+  margin: 10px;
+}
+
+/*                                                                  footer social icons */
+.social-network a.icoSoundcloud:hover {
+  background-color: #F56505;
+}
+
+.social-network a.icoFacebook:hover {
+  background-color: #3B5998;
+}
+
+.social-network a.icoTwitter:hover {
+  background-color: #33ccff;
+}
+
+.social-network a.icoVimeo:hover {
+  background-color: #0590B8;
+}
+
+.social-network a.icoSpotify:hover {
+  background-color: #84bd00;
+}
+
+.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
+  color: #fff;
+}
+
+a.socialIcon:hover, .socialHoverClass {
+  color: #44BCDD;
+}
+
+.social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 10 auto 10 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+}
+
+.social-circle li i {
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+}
+
+.social-circle li a:hover i, .triggeredHover {
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.social-circle i {
+  color: #fff;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+/*                                                                 hamburger menu*/
+.container nav.desk,
+.container nav.mob {
+  top: 0;
+  left: 0;
+  width: 101%;
+  bottom: 0px;
+  height: 60px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14);
+}
+
+nav {
+  position: fixed;
+  list-style: none;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  height: 4em;
+  width: 100%;
+  transition: background-color 0.4s ease-out;
+}
+
+nav.scroll {
+  background-color: black;
+}
+
+nav.desk ul {
+  list-style: none;
+  width: 70%;
+  height: 60px;
+  margin: 0 auto;
+}
+
+nav.desk ul a {
+  background-color: transparent;
+}
+
+nav.desk ul li {
+  width: 20%;
+  float: left;
+  text-align: center;
+  line-height: 60px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.5s sea;
+}
+
+nav.desk ul li.active,
+nav.mob ul li.active {
+  background: black;
+  height: 100%;
+  bottom: 0px;
+  padding: 30;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.mob,
+.hamburger-btn {
+  display: none;
+}
+
+/*                                media queries */
+@media screen and (max-width: 600px) {
+  nav.desk {
+    display: none;
+  }
+
+  nav.mob,
+  .hamburger-btn {
+    display: block;
+  }
+
+  .hamburger-btn {
+    position: relative;
+  }
+
+  .hamburger-btn .fa-bars,
+  .hamburger-btn .fa-times {
+    position: fixed;
+    right: 25px;
+    top: 15px;
+    font-size: 35px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .mob ul {
+    margin-top: 0px;
+    background: black;
+    display: none;
+  }
+
+  .mob li {
+    text-align: center;
+    padding: 50px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  .mob ul.active {
+    display: block;
+    background-color: black;
+    height: 900px;
+  }
+}
+
+@media(min-width: 992px) {
+  .section-column {
+    padding: 0 30px 30px;
+    float: none;
+    display: table-cell;
+  }
+
+  .center-form {
+    padding-top: 30px;
+    min-height: 250px;
+    margin: 0 auto;
+    max-width: 50%;
+  }
+}
+
+@media(min-width:360px) {
+  .videosize {
+    padding: 1.5rem;
+    margin-right: 0;
+    margin-left: 0;
+    border-width: .2rem;
+  }
+
+  @media(min-width:350) {
+    .row {
+      max-width: 900px;
+    }
+  }
+}
