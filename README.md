@@ -11,14 +11,14 @@ The site includes a bit of himself, tours, latest music, and merchandise.
 
 The website's goal is to target the audience in the easiest mode possible. The dark colours theme makes it even more modern and sleek.
 
-User story.
-Because I expect as a costumer I want this app/webpage to be stable.
-As a frequent shopper and rap music listener, I want to purchase and listen to music without hassle.
+# User story
+# Because I expect as a costumer I want this app/webpage to be stable.
+# As a frequent shopper and rap music listener, I want to purchase and listen to music without hassle.
 
 
-## Features
+# Features
 
-# Existing Features
+## Existing Features
 
 - This site uses the 'smooth scrolling' effect.
 - The navbar changes color when the user scrolls down so it can be much easier to see what it clicks. On mobile, the navigation background turns black and spacing between text
@@ -67,9 +67,9 @@ To run locally, you can clone this repository directly into the editor of your c
 
 
 
-## Credits
+# Credits
 
-# Content
+## Content
 The about me section was taken from Wikipedia first article (https://en.wikipedia.org/wiki/G-Eazy).
 
 # Media
