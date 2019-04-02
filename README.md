@@ -12,8 +12,8 @@ The site includes a bit of himself, tours, latest music, and merchandise.
 The website's goal is to target the audience in the easiest mode possible. The dark colours theme makes it even more modern and sleek.
 
 # User story
-# Because I expect as a costumer I want this app/webpage to be stable.
-# As a frequent shopper and rap music listener, I want to purchase and listen to music without hassle.
+- Because I expect as a costumer I want this app/webpage to be stable.
+- As a frequent shopper and rap music listener, I want to purchase and listen to music without hassle.
 
 
 # Features
