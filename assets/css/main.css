@@ -10,7 +10,7 @@ html {
 }
 
 #landing-view {
-  background-image: url(./assets/pics/pic2.jpg);
+  background-image: url(../pics/pic2.jpg);
   background-attachment: fixed;
   background-position: bottom;
   background-size: cover;
@@ -20,7 +20,7 @@ html {
 }
 
 #musicbg {
-  background-image: url(./assets/pics/pic4.jpg);
+  background-image: url(../pics/pic4.jpg);
   background-attachment: fixed;
   background-position: bottom;
   background-size: cover;
@@ -30,7 +30,7 @@ html {
 }
 
 .parallax {
-  background-image: url(./assets/pics/pic3.jpg);
+  background-image: url(../pics/pic3.jpg);
   height: 500px;
   background-attachment: fixed;
   background-position: center;
@@ -39,7 +39,7 @@ html {
 }
 
 #merchbg {
-  background-image: url(./assets/pics/pic5.jpg);
+  background-image: url(../pics/pic5.jpg);
   background-attachment: fixed;
   background-position: bottom;
   background-size: cover;
@@ -49,7 +49,7 @@ html {
 }
 
 .parallax {
-  background-image: url(./assets/pics/pic3.jpg);
+  background-image: url(../pics/pic3.jpg);
   height: 500px;
   background-attachment: fixed;
   background-position: center;
