@@ -10,6 +10,12 @@ The site includes a bit of himself, tours, latest music, and merchandise.
 ## UX
 
 The website's goal is to target the audience in the easiest mode possible. The dark colours theme makes it even more modern and sleek.
+
+User story.
+Because I expect as a costumer I want this app/webpage to be stable.
+As a frequent shopper and rap music listener, I want to purchase and listen to music without hassle.
+
+
 ## Features
 
 # Existing Features
@@ -32,7 +38,7 @@ The website's goal is to target the audience in the easiest mode possible. The d
 
 1. HTML
 2. CSS
-3. bootstrap (4.3.1)
+3. Bootstrap (4.3.1)
 4. Javascript
 5. Jquery/3.3.1
 
@@ -41,8 +47,11 @@ The website's goal is to target the audience in the easiest mode possible. The d
 
 The user can read about the rapper and even see him on the background of the main page and other pages on the site.
 They can view both the live version and the GitHub repository by clicking on the Font Awesome icons. They are also able to view the social media profiles via clicking on the icons in the footer. All links will open in a new tab using.
-
 By clicking on the links in the navbar, the smooth scroll effect will work regardless of whether or not you're viewing the sections in the same order they are listed in the navbar.
+
+When testing the mobile app I came across an issue, the menu had to little space between the text and the background was transparent, witch in my perspective that is poor UX design. The user should be able to press any button on the screen without
+the user discomfort by mistakenly clicking something else ( I would not like that either ) so I did the background black and added more space between the text.
+
 
 Try to submit the empty form and verify that an error message about the required fields appears
 Try to submit the form with an invalid email address and verify that a relevant error message appears
@@ -62,8 +71,12 @@ To run locally, you can clone this repository directly into the editor of your c
 
 # Content
 The about me section was taken from Wikipedia first article (https://en.wikipedia.org/wiki/G-Eazy).
+
 # Media
 The audio and video filers were taken from Youtube and Spotify.
+
+# Pictures
+The background pictures were taken from https://wallpapercave.com/g-eazy-wallpapers.
 
 #Acknowledgements
 
