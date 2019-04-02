@@ -1,4 +1,4 @@
-# geazy1
+
 # G-eazy
 
 Stream One Project: User-Centric Frontend Development - Code Institute
